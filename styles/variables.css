@@ -2,3 +2,62 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  --bg-color: #F3F1F1;
+  --accent-color: #000;
+  --text-color: #353430;
+  --title-color: #353430;
+  --font-family: "IBM Plex Mono", monospace;
+  --bg-image: url(../images/cover-image-light.png);
+  --main-font-size-d: 18px;
+  --main-line-height-d: 23.4px;
+  --rec-visibility: hidden;
+  --border-color: #353430;
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --padding-d: 20px;
+  --padding-m: 10px;
+  --title-font-size-d: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  --title-font-size-m: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --decor-color: #FFC2E6;
+  --decor-shadow: #FF8DCB;
+  --section-title-color: #353430;
+  --link-shadow: #FF8DCB;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #000028;
+    --accent-color: #FF0070;
+    --text-color: #F1B2CE;
+    --title-color: #DB00FF;
+    --bg-image: url(../images/cover-image-dark.png);
+    --rec-visibility: visible;
+    --border-color: #FF0070;
+    --hover-color: rgba(255, 0, 112, 0.4);
+    --decor-color: #FF0070;
+    --decor-shadow: #FF0070;
+    --accent-text-color: #000028;
+    --section-title-color: #FF0070;
+    --link-shadow: #FF0070;
+    --text-background-color: #FF0070;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: #000028;
+    --accent-color: #FF0070;
+    --text-color: #F1B2CE;
+    --title-color: #DB00FF;
+    --bg-image: url(../images/cover-image-dark.png);
+    --rec-visibility: visible;
+    --border-color: #FF0070;
+    --hover-color: rgba(255, 0, 112, 0.4);
+    --decor-color: #FF0070;
+    --decor-shadow: #FF0070;
+    --section-title-color: #FF0070;
+    --link-shadow: #FF0070;
+    --text-background-color: #FF0070;
+  }
+}
